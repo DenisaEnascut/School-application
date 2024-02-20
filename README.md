@@ -1,14 +1,18 @@
 # School-application
 Introduction
+
 	The School Administration API provides functionalities for managing students, classes, professors, and grades within a school institution. This API allows basic operations such as retrieving the list of students, adding a new student, updating student information, deleting a student, etc.
 
 Authentication
+
 	The API utilizes OAuth2 authentication to ensure security and access authorization. To access API resources, a valid access token is required.
 
 Client Authentication
+
 	To obtain an access token, client authentication using valid credentials is required. The client authentication endpoint is:
 
 Obtaining Access Token
+
 	After successful client authentication, you can obtain an access token by sending a request with valid user credentials. The endpoint for obtaining the access token is:
 
 Available Resources
