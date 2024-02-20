@@ -1,0 +1,24 @@
+/* Notes.css */
+
+.Notes-container {
+    margin-top: 20px;
+}
+
+.Notes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Notes-item {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #61dafb;
+    background-color: #ffffff;
+    color: #282c34;
+    cursor: pointer;
+}
+
+.Notes-item:hover {
+    background-color: #61dafb;
+    color: #ffffff;
+}

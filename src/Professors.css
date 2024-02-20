@@ -1,0 +1,24 @@
+/* Professors.css */
+
+.Professors-container {
+    margin-top: 20px;
+}
+
+.Professors-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Professors-item {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #61dafb;
+    background-color: #ffffff;
+    color: #282c34;
+    cursor: pointer;
+}
+
+.Professors-item:hover {
+    background-color: #61dafb;
+    color: #ffffff;
+}

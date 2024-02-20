@@ -1,0 +1,114 @@
+/* Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('C:/Users/Denisa/Documents/Munca/PROIECTE/NL/numele-proiectului/public/images/background_app.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px;
+  /* Adăugați această linie pentru a crea spațiu între antet și entități */
+}
+
+/* Container Styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #333;
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+/* Stilizează paragrafele din containerul de descriere */
+.description-container p {
+  color: #000000;/* Culorează textul în alb pentru contrast */
+  font-family: "Lucida Console","Courier New",monospace; /* Înlocuiește 'Numele-fontului' cu fontul pe care dorești să-l utilizezi */
+}
+/* Entity Styles */
+.entity-container {
+  display: flex;
+  flex-wrap: wrap; /* Așezați entitățile pe mai multe rânduri dacă nu încap pe un singur rând */
+  justify-content: space-around;
+  margin: 20px; /* Adăugați spațiu între antet și entități */
+}
+
+.entity {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entity-description {
+  text-align: left;
+}
+
+.entity h2 {
+  color: #000000;
+  text-align: center;
+  font-family: Georgia;
+}
+
+.entity p {
+  color: #000000;
+  text-align: center;
+  font-family: Georgia;
+}
+
+/* Stiluri pentru imaginile entităților */
+.entity-image {
+  width: 100%;
+  height: 200px; /* Setează înălțimea imaginii după necesitate */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+/* Stiluri pentru imaginea entității "Elevi" */
+.entity-image.elevi {
+  background-image: url('C:/Users/Denisa/Documents/Munca/PROIECTE/NL/numele-proiectului/public/images/elevi.jpg');
+}
+
+/* Stiluri pentru imaginea entității "Clase" */
+.entity-image.clase {
+  background-image: url('C:/Users/Denisa/Documents/Munca/PROIECTE/NL/numele-proiectului/public/images/clasa.jpg');
+}
+
+/* Stiluri pentru imaginea entității "Note" */
+.entity-image.note {
+  background-image: url('C:/Users/Denisa/Documents/Munca/PROIECTE/NL/numele-proiectului/public/images/note.jpg');
+}
+
+/* Stiluri pentru imaginea entității "Profesori" */
+.entity-image.profesori {
+  background-image: url('C:/Users/Denisa/Documents/Munca/PROIECTE/NL/numele-proiectului/public/images/profesor.jpg');
+}
+
+/* Navigation Styles */
+.navigation-bar {
+  display: flex;
+}
+
+.Login-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.Login-link:hover {
+  text-decoration: underline;
+}

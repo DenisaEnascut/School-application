@@ -1,0 +1,53 @@
+-- Crearea tabelului "Clase"
+CREATE TABLE Clase (
+  id_clasa INTEGER PRIMARY KEY,
+  nume_clasa VARCHAR(50),
+  nume_profesor VARCHAR(50)
+);
+
+-- Crearea tabelului "Studenti"
+CREATE TABLE Studenti (
+  id_student INTEGER PRIMARY KEY,
+  nume_student VARCHAR(50),
+  id_clasa INTEGER,
+  FOREIGN KEY (id_clasa) REFERENCES Clase(id_clasa)
+);
+
+-- Crearea tabelului "Profesori"
+CREATE TABLE Profesori (
+  id_profesor INTEGER PRIMARY KEY,
+  nume_profesor VARCHAR(50)
+);
+
+-- Crearea tabelului "Note"
+CREATE TABLE Note (
+  id_nota INTEGER PRIMARY KEY,
+  id_student INTEGER,
+  id_clasa INTEGER,
+  valoare_nota INTEGER,
+  FOREIGN KEY (id_student) REFERENCES Studenti(id_student)
+);
+
+-- Inserarea datelor în tabelul "Clase"
+INSERT INTO Clase (id_clasa, nume_clasa, nume_profesor) VALUES
+(1, '9A', 'Profesor Popescu'),
+(2, '10B', 'Profesoară Ionescu'),
+(3, '11C', 'Profesor Radu');
+
+-- Inserarea datelor în tabelul "Studenti"
+INSERT INTO Studenti (id_student, nume_student, id_clasa) VALUES
+(1, 'Alex Popescu', 1),
+(2, 'Ana Ionescu', 2),
+(3, 'George Vasilescu', 3);
+
+-- Inserarea datelor în tabelul "Note"
+INSERT INTO Note (id_nota, id_student, id_clasa, valoare_nota) VALUES
+(1, 1, 1, 9),
+(2, 2, 2, 8),
+(3, 3, 3, 10);
+
+-- Inserarea datelor în tabelul "Profesori" cu nume românești
+INSERT INTO Profesori (id_profesor, nume_profesor) VALUES
+(1, 'Profesor Popescu'),
+(2, 'Profesoară Ionescu'),
+(3, 'Profesor Radu');
